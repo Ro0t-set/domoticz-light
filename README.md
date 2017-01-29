@@ -1,2 +1,1 @@
-# domotic-light
-using raspberry p3 i have crate a web site four control light with an internet browser. on the raspberry I have install Apache2 and php5 
+Using a Raspberry pi 3 I made a website to control a relay, connected to a lightbulb, on the rpi I installed Apache 2 and php5, enjoy it !

@@ -1,0 +1,135 @@
+
+
+
+
+
+
+
+<!DOCTIPE html>
+<html>
+
+
+
+<head>
+
+
+<title>#Domotic</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/base-min.css">
+   <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="materialize/css/materiawlize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<meta name="viewport" content="width=device-width">
+
+
+    </head>
+
+<?php  session_start(); $_SESSION["on"] = "0";?>
+
+    
+<meta charset="UTF-8">
+		
+
+		
+	<body>
+ 
+
+
+<nav class="navbar navbar-default navbar-static-top">
+		<div class="corpo">
+			<header>			
+			</header>
+			<ul class="menu">
+				
+				
+					<ul class="sub-menu">
+						<li><a href="index.html">Domotica</a></li>
+						<li class="ultimo-sub"><a href=media.php>Media</a></li>
+					</ul>
+				
+			</ul>
+		</div>
+
+<br>
+<br>
+<br>
+<br>
+	<center>
+      <i class="medium material-icons">power_settings_new</i>
+     
+
+      	<h1 class="thin center teal-text" style="margin-top: 30px">LED</h1>         </center>    
+
+<div>
+
+	<form action="#" align="center">
+
+    <center>
+      <input class="with-gap" name="with-gap" type="radio" id="lezzoon" />
+      <label for="lezzoon">Acceso</label>
+    
+      <input class="with-gap" name="with-gap"  type="radio" id="lezzooff" />
+      <label for="lezzooff" >Spento</label>
+    </centre>
+
+    
+  </form>
+
+
+
+
+  
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#lezzoon").click(function(){
+            $.ajax({ type: 'POST', url: 'switchon.php',
+                success: function(data) {
+                	console.log(data);
+                }
+            });
+   });
+});
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#lezzooff").click(function(){
+            $.ajax({ type: 'POST', url: 'switchoff.php',
+                success: function(data) {
+                	console.log(data);
+                }
+            });
+   });
+});
+</script>
+
+
+
+
+</div>
+
+
+
+
+
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+

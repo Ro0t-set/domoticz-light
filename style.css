@@ -1,0 +1,64 @@
+@import url(http://fonts.googleapis.com/css?family=Aldrich);
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Aldrich', Regular;
+	background-image: url(sfondo.png);
+	color: red;
+}
+
+h1 {font-size: 80px;
+    color: blue;
+}
+
+center{
+       font-size:80px
+       
+
+}
+.corpo{
+	margin-top: 0px;
+	margin-left: center;
+}
+header{
+	margin: px 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #99a3a4;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding:30px 16px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #8D959B;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  
+</ul>
